@@ -2,7 +2,7 @@ NAME
     Business::PayPal::Permissions - PayPal Permissions
 
 VERSION
-    version 0.01
+    version 0.02
 
 SYNOPSIS
         use Business::PayPal::Permissions;
@@ -12,12 +12,6 @@ SYNOPSIS
             username => $cfg{username}, password => $cfg{password},
             signature => $cfg{signature}, sandbox => 1,
         );
-
-        my @ProfileIds = $cim->getCustomerProfileIds();
-        foreach my $id (@ProfileIds) {
-            my $d = $cim->getCustomerProfile($id);
-            print Dumper(\$d);
-        }
 
 DESCRIPTION
     PayPal Permissions

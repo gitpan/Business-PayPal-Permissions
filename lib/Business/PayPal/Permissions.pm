@@ -1,6 +1,6 @@
 package Business::PayPal::Permissions;
 {
-    $Business::PayPal::Permissions::VERSION = '0.01';
+    $Business::PayPal::Permissions::VERSION = '0.02';
 }
 
 # ABSTRACT: PayPal Permissions
@@ -224,7 +224,7 @@ Business::PayPal::Permissions - PayPal Permissions
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -235,12 +235,6 @@ version 0.01
         username => $cfg{username}, password => $cfg{password},
         signature => $cfg{signature}, sandbox => 1,
     );
-
-    my @ProfileIds = $cim->getCustomerProfileIds();
-    foreach my $id (@ProfileIds) {
-        my $d = $cim->getCustomerProfile($id);
-        print Dumper(\$d);
-    }
 
 =head1 DESCRIPTION
 
